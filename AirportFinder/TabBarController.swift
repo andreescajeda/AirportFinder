@@ -41,21 +41,21 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         mapController.airports = airports
         
         let mapNavigationController = UINavigationController(rootViewController: mapController)
-        mapNavigationController.tabBarItem.image = UIImage(named: "round_location_on_white_36pt")
-        mapNavigationController.tabBarItem.selectedImage = UIImage(named: "round_location_on_black_36pt")
+        mapNavigationController.tabBarItem.image = UIImage(named: "mark_white_36pt")
+        mapNavigationController.tabBarItem.selectedImage = UIImage(named: "mark_black_36pt")
         mapNavigationController.tabBarItem.title = "Mapa"
         
         let listController = ListController()
         listController.airports = airports
         
         let listNavigationController = UINavigationController(rootViewController: listController)
-        listNavigationController.tabBarItem.image = UIImage(named: "round_format_list_bulleted_white_36pt")
-        listNavigationController.tabBarItem.selectedImage = UIImage(named: "round_format_list_bulleted_black_36pt")
+        listNavigationController.tabBarItem.image = UIImage(named: "list_white_36pt")
+        listNavigationController.tabBarItem.selectedImage = UIImage(named: "list_black_36pt")
         listNavigationController.tabBarItem.title = "Lista"
         
         let closeNavigationController = UINavigationController(rootViewController: UIViewController())
-        closeNavigationController.tabBarItem.image = UIImage(named: "round_close_white_36pt")
-        closeNavigationController.tabBarItem.selectedImage = UIImage(named: "round_close_black_36pt")
+        closeNavigationController.tabBarItem.image = UIImage(named: "close_white_36pt")
+        closeNavigationController.tabBarItem.selectedImage = UIImage(named: "close_black_36pt")
         closeNavigationController.tabBarItem.title = "Cerrar"
         
         viewControllers = [mapNavigationController, listNavigationController, closeNavigationController]

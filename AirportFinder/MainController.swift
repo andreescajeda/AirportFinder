@@ -101,7 +101,7 @@ class MainController: UIViewController, CLLocationManagerDelegate {
         let strokeTextAttributes: [NSAttributedString.Key : Any] = [.strokeColor: UIColor.gray, .foregroundColor: UIColor.white, .strokeWidth: -0.5]
 
         view.addSubview(titleLabel)
-        titleLabel.anchor(top: view.topAnchor, right: view.rightAnchor, bottom: nil, left: view.leftAnchor, paddingTop: 15, paddingRight: 15, paddingBottom: 0, paddingLeft: 15, width: 0, height: 0)
+        titleLabel.anchor(top: view.topAnchor, right: view.rightAnchor, bottom: nil, left: view.leftAnchor, paddingTop: 60, paddingRight: 15, paddingBottom: 0, paddingLeft: 15, width: 0, height: 0)
         titleLabel.attributedText = NSAttributedString(string: "AIRPORT", attributes: strokeTextAttributes)
         
         view.addSubview(subtitleLabel)
